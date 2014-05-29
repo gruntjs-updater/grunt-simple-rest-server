@@ -25,24 +25,33 @@ var grunt = require('grunt');
 exports.simple_rest_server = {
   setUp: function(done) {
     // setup here if necessary
+    var Client = require('node-rest-client').Client;   
+    this.client = new Client();
+
     done();
   },
-  default_options: function(test) {
-    test.expect(1);
+  default_server: function(test) {
+    test.expect(2);
 
-    var actual = grunt.file.read('tmp/default_options');
-    var expected = grunt.file.read('test/expected/default_options');
-    test.equal(actual, expected, 'should describe what the default behavior is.');
+    // direct way
+    this.client.get("http://127.0.0.1:5000/projects", function(data, response){
 
-    test.done();
+      test.equal(response.statusCode, 200);
+      test.equal(data.name, "Default Project");
+      
+      test.done();
+    });
   },
-  custom_options: function(test) {
-    test.expect(1);
+  custom_server: function(test) {
+    test.expect(2);
 
-    var actual = grunt.file.read('tmp/custom_options');
-    var expected = grunt.file.read('test/expected/custom_options');
-    test.equal(actual, expected, 'should describe what the custom option(s) behavior is.');
+    // direct way
+    this.client.get("http://127.0.0.1:6000/projects", function(data, response){
 
-    test.done();
+      test.equal(response.statusCode, 200);
+      test.equal(data.name, "Custom Project");
+      
+      test.done();
+    });
   },
 };

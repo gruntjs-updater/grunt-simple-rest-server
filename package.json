@@ -25,8 +25,11 @@
   "scripts": {
     "test": "grunt test"
   },
+  "dependencies": {
+    "simple-rest-server" : "git://github.com/jvallelunga/simple-rest-server.git#850b91d110326ff13b47960dcee439ff345caf08"
+  },  
   "devDependencies": {
-    "simple-rest-server" : "git://github.com/jvallelunga/simple-rest-server.git#0.0.1a",
+    "node-rest-client": "0.8.8",
     "grunt-contrib-jshint": "^0.9.2",
     "grunt-contrib-clean": "^0.5.0",
     "grunt-contrib-nodeunit": "^0.3.3",

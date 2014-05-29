@@ -30,20 +30,15 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     simple_rest_server: {
-      default_options: {
+      default_server: {
         options: {
-        },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
+          rootPath: './test/services/default',
         }
       },
-      custom_options: {
+      custom_server: {
         options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
+          rootPath: './test/services/custom',
+          port: 6000
         }
       }
     },
