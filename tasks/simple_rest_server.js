@@ -18,11 +18,11 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('simple_rest_server', 'Mock REST api server', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      rootPath: './services',
-      port: 5000
+      //rootPath: './services',
+      //port: 5000
     });
 
-    rest.start(options.rootPath, options.port);
+    rest.init();
   });
 
 };

@@ -41,17 +41,5 @@ exports.simple_rest_server = {
       
       test.done();
     });
-  },
-  custom_server: function(test) {
-    test.expect(2);
-
-    // direct way
-    this.client.get("http://127.0.0.1:6000/projects", function(data, response){
-
-      test.equal(response.statusCode, 200);
-      test.equal(data.name, "Custom Project");
-      
-      test.done();
-    });
-  },
+  }
 };

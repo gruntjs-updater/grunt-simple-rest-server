@@ -26,7 +26,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "simple-rest-server" : "git://github.com/jvallelunga/simple-rest-server.git#850b91d110326ff13b47960dcee439ff345caf08"
+    "simple-rest-server" : "git://github.com/jvallelunga/simple-rest-server.git#02fd79629fe62d11a0714760e10447137d481f6e"
   },  
   "devDependencies": {
     "node-rest-client": "0.8.8",

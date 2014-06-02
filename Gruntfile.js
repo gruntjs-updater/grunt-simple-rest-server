@@ -31,15 +31,6 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     simple_rest_server: {
       default_server: {
-        options: {
-          rootPath: './test/services/default',
-        }
-      },
-      custom_server: {
-        options: {
-          rootPath: './test/services/custom',
-          port: 6000
-        }
       }
     },
 
