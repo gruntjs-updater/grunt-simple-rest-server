@@ -1,7 +1,7 @@
 {
   "name": "grunt-simple-rest-server",
   "description": "Mock REST api server task",
-  "version": "0.0.1",
+  "version": "0.0.1-a",
   "homepage": "https://github.com/jvallelunga/grunt-simple-rest-server",
   "author": {
     "name": "Jeronimo Vallelunga"
@@ -26,7 +26,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "simple-rest-server" : "0.0.1"
+    "simple-rest-server" : "0.0.1-a"
   },  
   "devDependencies": {
     "node-rest-client": "0.8.8",

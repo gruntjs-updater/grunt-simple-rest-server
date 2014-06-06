@@ -51,3 +51,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
   - Basic usage for Simple rest server 0.0.1
 
+* 0.0.1-a Initial release
+
+  - Basic usage for Simple rest server 0.0.1-a
+
